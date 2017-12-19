@@ -3,7 +3,7 @@ Agenda com localização
 Criar marcação:
 	Adicionar Data;
 	Adicionar Hora;
-	Adicionar Local/web get;
+	Adicionar Local/web get(Google API);
 	Adicionar Descrição;
 	Gravar dados/coordenadas na BD.
 
