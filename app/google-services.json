@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "198829371259",
+    "firebase_url": "https://scheduletask-872a4.firebaseio.com",
+    "project_id": "scheduletask-872a4",
+    "storage_bucket": "scheduletask-872a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198829371259:android:0f2d049e77ab91c1",
+        "android_client_info": {
+          "package_name": "com.example.bruno.scheduletask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198829371259-kj4h8q5358htcfd8guqhrhl1lsrq9htc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bruno.scheduletask",
+            "certificate_hash": "bb01c73551b86adc724aa8d6507e15d54b991d2d"
+          }
+        },
+        {
+          "client_id": "198829371259-nphsjginhqmkok096saf90q9endt6637.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoz7vKAmYYbOsBSdPi0oJydgGBaDM6eb8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198829371259-nphsjginhqmkok096saf90q9endt6637.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
