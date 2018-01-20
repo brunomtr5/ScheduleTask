@@ -18,7 +18,7 @@ public class DbHelper extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase db){
-        String schedule = "CREATE TABLE schedule(_id integer primary key autoincrement, nome varchar(50), data date, hora time, morada varchar(50), descricao text)";
+        String schedule = "CREATE TABLE schedule(_id integer primary key autoincrement, nome varchar(50), data varchar(50), hora varchar(20), morada varchar(50), descricao text)";
         db.execSQL(schedule);
     }
 
