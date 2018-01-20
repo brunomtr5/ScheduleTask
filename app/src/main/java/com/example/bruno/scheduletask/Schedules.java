@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 public class Schedules extends Activity {
 
@@ -52,13 +54,17 @@ public class Schedules extends Activity {
         dbAdaptor = new DbAdaptor(this).open();
         oIntent = getIntent();
         id = oIntent.getExtras().getInt("_id");
+        String t = oIntent.getExtras().getString("_id");
+        Log.v("Teste", ""+id);
+        Log.v("Teste2", ""+t);
         cursor = dbAdaptor.getScheduleId(id);
 
         textViewMorada.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("geo:0,0?q=" + textViewMorada.getText().toString() + ""));
+                intent.setData(Uri.parse("http://maps.google.co.in/maps?q=" + textViewMorada.getText().toString()));
+                startActivity(intent);
             }
         });
 
@@ -74,8 +80,10 @@ public class Schedules extends Activity {
         btnEditSchedule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                int _id = cursor.getInt(0);
                 Intent intent = new Intent(Schedules.this, EditSchedule.class);
-                intent.putExtra("_id", id);
+                intent.putExtra("_id", _id);
                 startActivity(intent);
             }
         });

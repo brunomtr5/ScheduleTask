@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -64,8 +65,10 @@ public class MainActivity extends Activity {
                 cursor.moveToPosition(position);
                 int _id = cursor.getInt(0);
 
+
+
                 Intent intent = new Intent(MainActivity.this, Schedules.class);
-                intent.putExtra("_id", id);
+                intent.putExtra("_id", _id);
                 startActivity(intent);
             }
         });
