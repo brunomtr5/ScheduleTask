@@ -34,7 +34,7 @@ public class DbAdaptor {
 
     public Cursor getScheduleId(Integer id){
         Cursor cursor = database.rawQuery(
-              "select _id, nome, data, hora, morada, descricao from schedule where _id=?", new String[] { id.toString() });
+              "select _id, nome, data, hora, morada, descricao from schedule where _id = ?", new String[] { id.toString() });
         return cursor;
     }
 
