@@ -3,10 +3,12 @@ Agenda com localização
 Criar marcação:
 	Adicionar Data;
 	Adicionar Hora;
-	Adicionar Local/web get(Google API);
+	Adicionar Morada;
 	Adicionar Descrição;
-	Gravar dados/coordenadas na BD.
+	Gravar na BD;
+
 
 Editar Marcação.
 Apagar Marcação.
 Lançar notificação para o utilizador antes da hora marcada.
+Lançar aplicação Google Maps quando clicar na morada da marcação.
